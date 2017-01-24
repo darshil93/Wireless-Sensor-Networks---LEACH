@@ -1,4 +1,16 @@
 function [nodeArch, clusterNode] = leach(clusterModel, clusterFunParam)
+% Create the new node architecture using leach algorithm in beginning 
+%  of each rond. This function is called by newCluster function.
+%   
+%   Input:
+%       clusterModel        Cluster model by newCluster function
+%       clusterFunParam     Parameters for the cluster function
+%                   [r ]
+%   Example:
+%       [nodeArch, clusterNode] = feval('leach', clusterModel, clusterFunParam);
+%
+% Hossein Dehghan, hd.dehghan@gmail.com
+% Ver 1. 2/2013
     
     nodeArch = clusterModel.nodeArch;
     netArch  = clusterModel.netArch;
